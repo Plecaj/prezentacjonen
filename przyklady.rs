@@ -33,7 +33,7 @@ fn main() {
         }
     }
 }
-/* 
+*/ 
 
 /* 
 // Przyklad 10.2
@@ -45,7 +45,7 @@ fn main() {
     }
     println!("Koniec!");
 }
-/* 
+*/
 
 /* 
 // Przyklad 10.3
@@ -54,7 +54,7 @@ fn main() {
         println!("Aktualna liczba: {}", liczba);
     }
 }
-/* 
+*/
 
 //==========================FUNKCJE==========================
 /*
