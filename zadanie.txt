@@ -1,0 +1,55 @@
+ZADANIA:
+
+1:
+fn main() {
+    let liczba = 10;
+    liczba = liczba + 5;
+    println!("Nowa wartosc liczby to: {}", liczba);
+}
+
+2:
+fn main() {
+    let x: u32 = 10;
+    let y: u32 = 15;
+    println!("x - y = : {}", x - y);
+}
+
+3.
+fn main() {
+    let liczba: i32 = 10;
+    let zmiennoprzecinkowa: f32 = liczba;
+    println!("Liczba to: {}", zmiennoprzecinkowa);
+}
+
+4.
+fn oblicz_pole(szerokosc: u32, dlugosc: u32) {
+    return szerokosc * dlugosc;
+}
+
+fn main() {
+    let wynik = oblicz_pole(5, 10);
+    println!("Pole prostokąta: {}", wynik);
+}
+
+5.
+Zadanie: Napraw kod, aby można było używać zmiennej s po jej przekazaniu do funkcji
+
+fn main() {
+    let s = String::from("Witaj, Rust!");
+    
+    pokaz_tekst(s);
+    
+    println!("{}", s);
+}
+
+fn pokaz_tekst(tekst: String) {
+    println!("Tekst: {}", tekst);
+}
+
+6.
+Zadanie: Napraw kod, aby przypisać wartość typu &str do zmiennej typu String.
+
+fn main() {
+    let s: String = "Hello, World!"; 
+    println!("{}", s);
+}
