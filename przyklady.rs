@@ -10,8 +10,7 @@ fn main(){
 */
 
 //=================KONWERSJA TYPOW=======================
-
-/* Przyklad 9.1
+/*
 fn main(){
     let x: i32 = 7;
     let y: i16 = 8;
@@ -19,9 +18,29 @@ fn main(){
 } 
 */
 
+//===============INSTRUKCJE WARUNKOWE====================
+/*
+fn main() {
+    // Przyklad if z przypisaniem do zmiennej
+    let liczba = 5;
+    let wynik = if liczba > 0 {
+        "dodatnia"
+    } else {
+        "ujemna lub zero"
+    };
+    println!("Liczba jest: {}", wynik);
+
+    // Przyklad match
+    let kod = 200;
+    match kod {
+        200 => println!("OK"),
+        404 => println!("Nie znaleziono"),
+        _ => println!("Inny status"),
+    }
+}
+*/
 //===================PĘTLE===============================
 /* 
-// Przyklad 10.1
 fn main() {
     let mut licznik = 0;
     loop {
@@ -36,7 +55,6 @@ fn main() {
 */ 
 
 /* 
-// Przyklad 10.2
 fn main() {
     let mut x = 3;
     while x > 0 {
@@ -48,7 +66,6 @@ fn main() {
 */
 
 /* 
-// Przyklad 10.3
 fn main() {
     for liczba in 1..6 {
         println!("Aktualna liczba: {}", liczba);
@@ -58,7 +75,6 @@ fn main() {
 
 //==========================FUNKCJE==========================
 /*
-//Przyklad 11.1
 fn mnoz(x: i32, y: i32) -> i32 {
     return x * y;
 }
@@ -72,7 +88,6 @@ fn main(){
 //===========================OWNERSHIP======================
 /*
 fn main() {
-    // Przyklad 12.1
     let tekst = String::from("hello");
     
     let nowy_tekst = tekst; 
@@ -90,7 +105,6 @@ fn main() {
 //===========================BORROWING=====================
 /*
 fn main() {
-    // Przyklad 13.1
     let mut data = String::from("Tak");
 
     let ref1 = &data;
