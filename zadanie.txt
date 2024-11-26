@@ -22,6 +22,8 @@ fn main() {
 }
 
 4.
+
+5.
 fn oblicz_pole(szerokosc: u32, dlugosc: u32) {
     return szerokosc * dlugosc;
 }
@@ -29,21 +31,6 @@ fn oblicz_pole(szerokosc: u32, dlugosc: u32) {
 fn main() {
     let wynik = oblicz_pole(5, 10);
     println!("Pole prostokąta: {}", wynik);
-}
-
-5.
-Zadanie: Napraw kod, aby można było używać zmiennej s po jej przekazaniu do funkcji
-
-fn main() {
-    let s = String::from("Witaj, Rust!");
-    
-    pokaz_tekst(s);
-    
-    println!("{}", s);
-}
-
-fn pokaz_tekst(tekst: String) {
-    println!("Tekst: {}", tekst);
 }
 
 6.
