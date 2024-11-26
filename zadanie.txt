@@ -23,6 +23,19 @@ fn main() {
 
 4.
 
+fn sprawdz_status(kod: i32) -> String {
+    match kod {
+        200 => "OK".to_string(),
+        404 => "Nie znaleziono".to_string(),
+        500 => "Błąd serwera".to_string(),
+    }
+}
+
+fn main() {
+    let status = sprawdz_status(404);
+    println!("Status: {}", status);
+}
+
 5.
 fn oblicz_pole(szerokosc: u32, dlugosc: u32) {
     return szerokosc * dlugosc;
