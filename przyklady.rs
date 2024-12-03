@@ -132,3 +132,68 @@ fn main() {
     }
 }
 */
+//======================================TUPLE============================
+/*
+fn main() {
+    let krotka = (42, "tekst", true);
+    println!("Pierwszy: {}", krotka.0);
+    
+    let (liczba, tekst, flaga) = krotka;
+    println!("Rozpakowane: {}, {}, {}", liczba, tekst, flaga);
+}
+*/
+
+//===========================================ARRAY=============================
+/*
+fn main() {
+    let liczby: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("Trzeci element: {}", liczby[2]);
+    
+    // Iteracja po tablicy
+    for x in liczby.iter() {
+        println!("Element: {}", x);
+    }
+}
+*/
+
+//================================================VEC================================
+
+/*
+fn main() {
+    let mut wektor = Vec::new();
+    wektor.push(1);
+    wektor.push(2);
+    
+    let mut v2 = vec![1, 2, 3];
+    v2.pop();
+    
+    println!("Długość: {}", wektor.len());
+    println!("Drugi element: {}", wektor[1]);
+}
+*/
+
+//==============================================STRUCTY=================================
+/*
+fn main() {
+    struct Osoba {
+        imie: String,
+        wiek: u32
+    }
+
+    impl Osoba {
+        fn new(imie: &str, wiek: u32) -> Osoba {
+            Osoba {
+                imie: String::from(imie),
+                wiek
+            }
+        }
+        
+        fn przedstaw_sie(&self) {
+            println!("Cześć, mam na imię {}", self.imie);
+        }
+    }
+
+    let osoba = Osoba::new("Jan", 25);
+    osoba.przedstaw_sie();
+}
+*/
