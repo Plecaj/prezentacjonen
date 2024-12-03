@@ -53,3 +53,59 @@ fn main() {
     let s: String = "Hello, World!"; 
     println!("{}", s);
 }
+
+7.
+fn main() {
+    let tup = (1, "hello");
+    let (a, b, c) = tup;  // Błąd: Próba rozpakowania więcej elementów niż jest w krotce
+    println!("Wartości: {}, {}, {}", a, b, c);
+}
+
+8.
+fn main() {
+    struct Osoba {
+        imie: String,
+        wiek: u32
+    }
+
+    let osoba = Osoba {
+        imie: String::from("Jan")
+    };
+    
+    println!("Osoba: {}", osoba.imie);
+}
+
+9.
+struct Student {
+    imie: String,
+    oceny: Vec<u32>
+}
+
+impl Student {
+    fn new(imie: String) -> Student {
+        Student {
+            imie,
+            oceny: Vec::new()
+        }
+    }
+
+    fn dodaj_ocene(&self, ocena: u32) {
+        self.oceny.push(ocena);
+    }
+
+    fn srednia(&self) -> f32 {
+        let mut suma = 0;
+        let n = self.oceny.len();
+        for i in 0..n{
+            suma+=self.oceny[i];
+        }
+        suma as f32 / n as f32
+    }
+}
+
+fn main() {
+    let student = Student::new(String::from("Jan"));
+    student.dodaj_ocene(5);
+    student.dodaj_ocene(4);
+    println!("Średnia: {}", student.srednia());
+}
